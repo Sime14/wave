@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        /* Top Section (White) */
+        .top-section {
+            background-color: white;
+            height: 200px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .top-section h1 {
+            font-size: 4rem;
+            color: #b30000;
+            /* Dark red text */
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* The Wave Container */
+        .wave-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            /* Removes default whitespace under SVG */
+            background-color: white;
+            /* Matches top section */
+        }
+
+        .wave-svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+            /* Controls the height of the wave */
+        }
+
+        /* Bottom Section (Navy) */
+        .bottom-section {
+            background-color: #030014;
+            /* Dark Navy from image */
+            height: 300px;
+            /* Adjust as needed */
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="top-section">
+        <h1>WORKS</h1>
+    </section>
+
+    <div class="wave-container">
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 
+                     v60 
+                     c30,10 200,50 400,20 
+                     s350,-40 800,0 
+                     v-80 
+                     z" fill="#d90429" />
+
+            <path d="M0,70 
+                     c30,10 200,50 400,20 
+                     s350,-40 800,0 
+                     v50 
+                     h-1200 
+                     z" fill="#030014" />
+        </svg>
+    </div>
+
+    <section class="bottom-section">
+    </section>
+
+</body>
+
+</html>
